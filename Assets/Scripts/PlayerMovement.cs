@@ -13,11 +13,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canJump = true;
     Vector2 rotation;
+    private Vector3 velocity;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.AddForce(fishTransform.up * 100, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Boost();
         Rotate();
+        ChangeDrag();
     }
 
     private void Boost()
@@ -51,5 +54,16 @@ public class PlayerMovement : MonoBehaviour
         canJump = false;
         yield return new WaitForSeconds(jumpWaitTime);
         canJump = true;
+    }
+
+    private void ChangeDrag()
+    {
+        velocity = rb.velocity;
+        Debug.Log("velocity = " + velocity);
+
+        if (velocity.x < 5)
+        {
+            rb.drag = 3;
+        }
     }
 }
