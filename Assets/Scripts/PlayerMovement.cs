@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public PlayerFuel playerFuel;
+    public FuelJump playerJump;
     Rigidbody2D rb;
     public Transform fishTransform;
-    public int jumpForce;
     public int rotationForce;
     public float jumpWaitTime = 1;
 
@@ -15,14 +14,12 @@ public class PlayerMovement : MonoBehaviour
     Vector2 rotation;
     private Vector3 velocity;
     
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(fishTransform.up * 100, ForceMode2D.Impulse);
     }
 
-    // Update is called once per frame
     void Update()
     {
         Boost();
@@ -32,10 +29,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Boost()
     {
-        if (Input.GetKey(KeyCode.Space) && canJump && playerFuel.fuel > 0 && canJump)
+        if (Input.GetKey(KeyCode.Space) && canJump)
         {
-            rb.AddForce(fishTransform.up * jumpForce, ForceMode2D.Impulse);
-            playerFuel.ChangeFuel(-10);
+            
             StartCoroutine("BoostCooldown");
         }
     }
@@ -59,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     private void ChangeDrag()
     {
         velocity = rb.velocity;
-        Debug.Log("velocity = " + velocity);
+        //Debug.Log("velocity = " + velocity);
 
         if (velocity.x < 5)
         {

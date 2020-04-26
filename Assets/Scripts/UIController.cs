@@ -6,21 +6,10 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     public Image fuelbar;
+    public FloatReference fuelPercentage;
 
-    // Start is called before the first frame update
-    void Start()
+    public void ChangeFuelbar()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void ChangeFuelbar(float fillAmount)
-    {
-        fuelbar.fillAmount = fillAmount;
+        fuelbar.fillAmount = fuelPercentage.value;
     }
 }
