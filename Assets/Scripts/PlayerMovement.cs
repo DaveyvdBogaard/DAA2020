@@ -8,9 +8,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     public Transform fishTransform;
     public int rotationForce;
-    public float jumpWaitTime = 1;
-
-    private bool canJump = true;
+   
     Vector2 rotation;
     private Vector3 velocity;
     
@@ -29,10 +27,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Boost()
     {
-        if (Input.GetKey(KeyCode.Space) && canJump)
+        if (Input.GetKey(KeyCode.Space))
         {
-            
-            StartCoroutine("BoostCooldown");
+            playerJump.jump();
         }
     }
 
@@ -43,13 +40,6 @@ public class PlayerMovement : MonoBehaviour
             rotation.x = Input.GetAxisRaw("Horizontal");
             rb.AddTorque(rotation.x * -1 * rotationForce);
         }
-    }
-
-    private IEnumerator BoostCooldown()
-    {
-        canJump = false;
-        yield return new WaitForSeconds(jumpWaitTime);
-        canJump = true;
     }
 
     private void ChangeDrag()
