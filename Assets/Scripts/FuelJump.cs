@@ -14,6 +14,9 @@ public class FuelJump : MonoBehaviour
     Rigidbody2D rb;
     public Transform fishTransform;
 
+    public float jumpWaitTime = 1;
+    private bool canJump = true;
+
     void Start()
     {
         fuel = startingFuel;
@@ -21,14 +24,27 @@ public class FuelJump : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void ChangeFuel()
+    public void jump()
     {
-        if (fuel >= 0 + fuelcost)
+        if (canJump == true)
         {
-            rb.AddForce(fishTransform.up * jumpForce, ForceMode2D.Impulse);
-            fuel -= fuelcost;
-            fuelPercentage.value = fuel / startingFuel;
-            UIUpdate.Raise();
+            Debug.Log("can Jump");
+            if (fuel >= 0 + fuelcost)
+            {
+                Debug.Log("Has fuel");
+                rb.AddForce(fishTransform.up * jumpForce, ForceMode2D.Impulse);
+                fuel -= fuelcost;
+                fuelPercentage.value = fuel / startingFuel;
+                UIUpdate.Raise();
+                StartCoroutine("BoostCooldown");
+            }
         }
+    }
+
+    private IEnumerator BoostCooldown()
+    {
+        canJump = false;
+        yield return new WaitForSeconds(jumpWaitTime);
+        canJump = true;
     }
 }
