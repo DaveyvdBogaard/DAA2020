@@ -28,10 +28,8 @@ public class FuelJump : MonoBehaviour
     {
         if (canJump == true)
         {
-            Debug.Log("can Jump");
             if (fuel >= 0 + fuelcost)
             {
-                Debug.Log("Has fuel");
                 rb.AddForce(fishTransform.up * jumpForce, ForceMode2D.Impulse);
                 fuel -= fuelcost;
                 fuelPercentage.value = fuel / startingFuel;
