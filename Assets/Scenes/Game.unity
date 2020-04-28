@@ -216,7 +216,6 @@ GameObject:
   - component: {fileID: 463854790}
   - component: {fileID: 463854794}
   - component: {fileID: 463854795}
-  - component: {fileID: 463854796}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -331,33 +330,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1fe985f66c9c4640b3514dc7f98df39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463854789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8310d20be8abf24fa8218b194b63543, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 1623308047}
   Event: {fileID: 11400000, guid: 2250c9fedac4f2645a390b505ca4be4a, type: 2}
   Response:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 463854794}
-        m_MethodName: ChangeFuelbar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &632083734
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632083734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.33000013, y: 1.1700001, z: -10}
+  m_LocalPosition: {x: -0.33000025, y: 1.1700001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1165211528}
@@ -652,9 +628,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2857fa2c2bf87594fa5392691f7bcb4e, type: 2}
-  m_sharedMaterial: {fileID: -8140901581865819363, guid: 2857fa2c2bf87594fa5392691f7bcb4e,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -679,7 +654,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 60
+  m_fontSize: 53.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -824,9 +799,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2857fa2c2bf87594fa5392691f7bcb4e, type: 2}
-  m_sharedMaterial: {fileID: -8140901581865819363, guid: 2857fa2c2bf87594fa5392691f7bcb4e,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -851,7 +825,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 60
+  m_fontSize: 53.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1086,7 +1060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288130982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.33000013, y: 1.1700001, z: -10}
+  m_LocalPosition: {x: -0.33000025, y: 1.1700001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1454,9 +1428,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: RESUME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2857fa2c2bf87594fa5392691f7bcb4e, type: 2}
-  m_sharedMaterial: {fileID: -8140901581865819363, guid: 2857fa2c2bf87594fa5392691f7bcb4e,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1711,7 +1684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 463854796}
+      - m_Target: {fileID: 0}
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -1972,6 +1945,7 @@ GameObject:
   - component: {fileID: 2007494535}
   - component: {fileID: 2007494538}
   - component: {fileID: 2007494539}
+  - component: {fileID: 2007494540}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2128,6 +2102,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe804fc57672ee243b7f4b3a3e45d19e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2007494540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007494532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f835f32c0b851f043857777d51d6982e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diveBoostForce: {fileID: 11400000, guid: b1f784ac9d7e00741bc35678f54fa89e, type: 2}
 --- !u!1 &2119275955
 GameObject:
   m_ObjectHideFlags: 0
