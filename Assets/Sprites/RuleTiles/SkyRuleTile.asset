@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: SkyRuleTile
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -805199108756467273, guid: 7023945855d4d6d4fad499d1e4036e1b,
+  m_DefaultSprite: {fileID: -4613289056417007753, guid: b4d1e96b5e2fb3d4b880126fead9d1f5,
     type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 0
     m_Sprites:
-    - {fileID: -805199108756467273, guid: 7023945855d4d6d4fad499d1e4036e1b, type: 3}
-    - {fileID: 2775099405183514844, guid: 7023945855d4d6d4fad499d1e4036e1b, type: 3}
-    - {fileID: -1897742399223812703, guid: 7023945855d4d6d4fad499d1e4036e1b, type: 3}
+    - {fileID: -6000153428433974172, guid: b4d1e96b5e2fb3d4b880126fead9d1f5, type: 3}
+    - {fileID: 2021245421407907287, guid: b4d1e96b5e2fb3d4b880126fead9d1f5, type: 3}
+    - {fileID: -4613289056417007753, guid: b4d1e96b5e2fb3d4b880126fead9d1f5, type: 3}
+    - {fileID: -1530351778694735693, guid: b4d1e96b5e2fb3d4b880126fead9d1f5, type: 3}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -35,7 +36,7 @@ MonoBehaviour:
     - {fileID: 0}
     m_GameObject: {fileID: 0}
     m_AnimationSpeed: 1
-    m_PerlinScale: 0.626
+    m_PerlinScale: 0.523
     m_Output: 1
     m_ColliderType: 1
     m_RandomTransform: 0

@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 7023945855d4d6d4fad499d1e4036e1b
+guid: b4d1e96b5e2fb3d4b880126fead9d1f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2775099405183514844
-    second: clouds tileset_0
+      213: -6000153428433974172
+    second: clouds tileset2_0
   - first:
-      213: -805199108756467273
-    second: clouds tileset_1
+      213: 2021245421407907287
+    second: clouds tileset2_1
   - first:
-      213: -1897742399223812703
-    second: clouds tileset_2
+      213: -4613289056417007753
+    second: clouds tileset2_2
+  - first:
+      213: -1530351778694735693
+    second: clouds tileset2_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clouds tileset_0
+      name: clouds tileset2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd87c56b432238620800000000000000
-      internalID: 2775099405183514844
+      spriteID: 46cc95c3f3c2bbca0800000000000000
+      internalID: -6000153428433974172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds tileset_1
+      name: clouds tileset2_1
       rect:
         serializedVersion: 2
         x: 112
@@ -142,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b11c1d3dab53d4f0800000000000000
-      internalID: -805199108756467273
+      spriteID: 7dd27e27008ec0c10800000000000000
+      internalID: 2021245421407907287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds tileset_2
+      name: clouds tileset2_2
       rect:
         serializedVersion: 2
         x: 0
@@ -163,8 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ad2113b75dd9a5e0800000000000000
-      internalID: -1897742399223812703
+      spriteID: 7773112ab0e4affb0800000000000000
+      internalID: -4613289056417007753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clouds tileset2_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b853895a2913cae0800000000000000
+      internalID: -1530351778694735693
       vertices: []
       indices: 
       edges: []
