@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Upgrade", menuName = "ScriptableObjects/Upgrade", order = 51)]
-public abstract class SO_Upgrade : ScriptableObject
+public class SO_Upgrade : ScriptableObject
 {
     public float value;
     public string upgradeName;
