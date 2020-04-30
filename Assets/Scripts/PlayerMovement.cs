@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(fishTransform.up * 100, ForceMode2D.Impulse);
+       
     }
 
     void Update()
