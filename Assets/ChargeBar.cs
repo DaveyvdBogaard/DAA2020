@@ -9,6 +9,8 @@ public class ChargeBar : MonoBehaviour
     public float growFactor;
     public float waitTime;
 
+    [Header("Extra boost value")]
+    // This is the power the fish should get when being shot
     public float startPower = 10;
 
     void Start()
