@@ -31,13 +31,11 @@ public class StartRotation : MonoBehaviour
         // rotate ro right
         if (Input.GetAxisRaw("Horizontal") > 0 && fishTransform.rotation.z >= minFishRotation.value)
         {
-            Debug.Log(fishTransform.rotation.z);
             fishTransform.rotation *= Quaternion.Euler(0, 0, -2);
         }
         // rotate to left
         else if (Input.GetAxisRaw("Horizontal") < 0 && fishTransform.rotation.z <= maxFishRotation.value)
         {
-            Debug.Log(fishTransform.rotation.z);
             fishTransform.rotation *= Quaternion.Euler(0, 0, 2);
         }
         
