@@ -14,14 +14,10 @@ public class ChargeBar : MonoBehaviour
     public FloatReference startPower;
     public FloatReference statStartPower;
 
-    void Start()
+    void Awake()
     {
         startPower.value = statStartPower.value;
         StartCoroutine(Scale());
-    }
-    private void Update()
-    {
-        
     }
     IEnumerator Scale()
     {

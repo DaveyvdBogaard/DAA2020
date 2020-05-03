@@ -2713,6 +2713,11 @@ PrefabInstance:
       propertyPath: audio
       value: 
       objectReference: {fileID: 2007494533}
+    - target: {fileID: 7538716433448930273, guid: 4c29cb84a7c8fba42bea6f3f7be40103,
+        type: 3}
+      propertyPath: fuelcost
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7538716433448930274, guid: 4c29cb84a7c8fba42bea6f3f7be40103,
         type: 3}
       propertyPath: m_LocalPosition.x
