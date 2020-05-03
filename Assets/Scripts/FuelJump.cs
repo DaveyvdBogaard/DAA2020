@@ -10,7 +10,7 @@ public class FuelJump : MonoBehaviour
     public float fuel;
     public float fuelcost;
 
-    public int jumpForce;
+    public FloatReference jumpForce;
     Rigidbody2D rb;
     public Transform fishTransform;
 
@@ -30,7 +30,7 @@ public class FuelJump : MonoBehaviour
         {
             if (fuel >= 0 + fuelcost)
             {
-                rb.AddForce(fishTransform.up * jumpForce, ForceMode2D.Impulse);
+                rb.AddForce(fishTransform.up * jumpForce.value, ForceMode2D.Impulse);
                 fuel -= fuelcost;
                 fuelPercentage.value = fuel / startingFuel;
                 UIUpdate.Raise();
