@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692fb1fb4dc41f743b4f2d07fd223330, type: 3}
   m_Name: Fuel
   m_EditorClassIdentifier: 
-  value: 100
+  upgradeStat: {fileID: 11400000, guid: fe0fd1a48767f224381808a0b1173230, type: 2}
   upgradeName: Fuel
   upgradeSprite: {fileID: 21300000, guid: 0faf589efacb7134aabfae3c4c4f5765, type: 3}
   upgradePrice: 100

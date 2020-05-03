@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 692fb1fb4dc41f743b4f2d07fd223330, type: 3}
+  m_Script: {fileID: 11500000, guid: 692e13200973efc459b544ca1d7b15f5, type: 3}
   m_Name: DiveBoost
   m_EditorClassIdentifier: 
-  upgradeStat: {fileID: 0}
-  upgradeName: Dive Boost
-  upgradeSprite: {fileID: 21300000, guid: e955c59675b4ff74c8a10b80be278279, type: 3}
-  upgradePrice: 100
-  priceMultiplier: 1.8
-  valueMultiplier: 1.15
+  value: 10

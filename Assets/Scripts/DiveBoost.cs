@@ -6,7 +6,7 @@ public class DiveBoost : MonoBehaviour
 {
     Rigidbody2D rb;
     Transform fishTransform;
-    public IntReference diveBoostForce;
+    public FloatReference diveBoostForce;
 
     private float pastHeight;
     // Start is called before the first frame update

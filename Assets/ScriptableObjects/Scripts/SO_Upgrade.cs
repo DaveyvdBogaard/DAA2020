@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Upgrade", menuName = "ScriptableObjects/Upgrade", order = 51)]
 public class SO_Upgrade : ScriptableObject
 {
-    public float value;
+    public FloatReference upgradeStat;
     public string upgradeName;
     public Sprite upgradeSprite;
     public int upgradePrice;
@@ -17,7 +17,7 @@ public class SO_Upgrade : ScriptableObject
         if (PlayerMoney.value >= upgradePrice)
         {
             PlayerMoney.value = PlayerMoney.value - upgradePrice;
-            value = value * valueMultiplier;
+            upgradeStat.value = upgradeStat.value * valueMultiplier;
             upgradePrice = Mathf.CeilToInt(upgradePrice * priceMultiplier);
         }
     }

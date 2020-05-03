@@ -6,6 +6,7 @@ public class FuelJump : MonoBehaviour
 {
     public GameEvent UIUpdate;
     public FloatReference fuelPercentage;
+    public FloatReference fuelStat;
     public float startingFuel;
     public float fuel;
     public float fuelcost;
@@ -20,6 +21,7 @@ public class FuelJump : MonoBehaviour
 
     void Start()
     {
+        startingFuel = fuelStat.value;
         fuel = startingFuel;
         fuelPercentage.value = fuel / startingFuel;
         rb = GetComponent<Rigidbody2D>();

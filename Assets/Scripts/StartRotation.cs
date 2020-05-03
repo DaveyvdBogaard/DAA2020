@@ -8,7 +8,7 @@ public class StartRotation : MonoBehaviour
     private Transform fishTransform;
     public FloatReference maxFishRotation;
     public FloatReference minFishRotation;
-    public IntReference startPower;
+    public FloatReference startPower;
     // Start is called before the first frame update
     void Start()
     {

@@ -159,10 +159,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIUpdate: {fileID: 11400000, guid: 2250c9fedac4f2645a390b505ca4be4a, type: 2}
   fuelPercentage: {fileID: 11400000, guid: fe0fd1a48767f224381808a0b1173230, type: 2}
+  fuelStat: {fileID: 11400000, guid: deb3a94e1c02fc04384cb9b12129d01a, type: 2}
   startingFuel: 100
   fuel: 0
   fuelcost: 10
-  jumpForce: 50
+  audio: {fileID: 0}
+  jumpForce: {fileID: 0}
   fishTransform: {fileID: 7538716433448930274}
   jumpWaitTime: 1
 --- !u!114 &7538716433448930272
@@ -202,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f835f32c0b851f043857777d51d6982e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diveBoostForce: {fileID: 11400000, guid: b1f784ac9d7e00741bc35678f54fa89e, type: 2}
+  diveBoostForce: {fileID: 11400000, guid: 2f3edde7ec463fb4da779abd21a40d9e, type: 2}
 --- !u!114 &3936289539749711673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxFishRotation: {fileID: 11400000, guid: c0120f667ebca9a419dc8536485b4691, type: 2}
   minFishRotation: {fileID: 11400000, guid: 7a3e4964275527a43a578c82df2a0720, type: 2}
-  startPower: {fileID: 11400000, guid: 51eea691a9cd18a4b84609c765a279c2, type: 2}
+  startPower: {fileID: 11400000, guid: fbc5bf26da34b9f478565c1a3645e19c, type: 2}
 --- !u!114 &2007494533
 MonoBehaviour:
   m_ObjectHideFlags: 0
