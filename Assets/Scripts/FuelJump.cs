@@ -9,8 +9,9 @@ public class FuelJump : MonoBehaviour
     public float startingFuel;
     public float fuel;
     public float fuelcost;
+    public AudioSource audio;
 
-    public int jumpForce;
+    public FloatReference jumpForce;
     Rigidbody2D rb;
     public Transform fishTransform;
 
@@ -30,11 +31,14 @@ public class FuelJump : MonoBehaviour
         {
             if (fuel >= 0 + fuelcost)
             {
-                rb.AddForce(fishTransform.up * jumpForce, ForceMode2D.Impulse);
+                rb.AddForce(fishTransform.up * jumpForce.value, ForceMode2D.Impulse);
                 fuel -= fuelcost;
                 fuelPercentage.value = fuel / startingFuel;
                 UIUpdate.Raise();
                 StartCoroutine("BoostCooldown");
+                float randomPitch = Random.Range(0.9f, 1.1f);
+                audio.pitch = randomPitch;
+                audio.Play();
             }
         }
     }

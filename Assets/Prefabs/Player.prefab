@@ -18,9 +18,10 @@ GameObject:
   - component: {fileID: 7538716433448930279}
   - component: {fileID: 7538716433448930278}
   - component: {fileID: 3936289539749711673}
+  - component: {fileID: 2007494533}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +98,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7538716433448930287}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -138,9 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919fe68633f97de45b164cf39639de67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneLoader: {fileID: 0}
   playerJump: {fileID: 7538716433448930273}
   fishTransform: {fileID: 7538716433448930274}
   rotationForce: 5
+  diveBoost: {fileID: 0}
+  addMoney: {fileID: 2007494533}
 --- !u!114 &7538716433448930273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,3 +217,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxFishRotation: {fileID: 11400000, guid: c0120f667ebca9a419dc8536485b4691, type: 2}
   minFishRotation: {fileID: 11400000, guid: 7a3e4964275527a43a578c82df2a0720, type: 2}
+  startPower: {fileID: 11400000, guid: 51eea691a9cd18a4b84609c765a279c2, type: 2}
+--- !u!114 &2007494533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7538716433448930287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31006ba61b652354a968112ba193664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentMoney: {fileID: 11400000, guid: 4b740a89fd685b745a47c54230ccfb22, type: 2}
+  PlayerDistance: {fileID: 11400000, guid: c9a9b6b03f24e724a87ac8c4b2bffd53, type: 2}
+  RewardMultiplier: {fileID: 11400000, guid: 42319295dc382e54f950ffac7fd701ce, type: 2}

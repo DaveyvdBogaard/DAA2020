@@ -10,14 +10,16 @@ public class PlayerMovement : MonoBehaviour
     public Transform fishTransform;
     public int rotationForce;
     public DiveBoost diveBoost;
+    public AddMoney addMoney;
    
     Vector2 rotation;
     private Vector3 velocity;
-    
+
+    bool stopped = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-       
     }
 
     void Update()
@@ -47,16 +49,17 @@ public class PlayerMovement : MonoBehaviour
     private void ChangeDrag()
     {
         velocity = rb.velocity;
-
-        if (velocity.x < 5 && transform.position.y < 5f)
+        if (velocity.x < 5 && transform.position.y < 5f && transform.position.y > -5 && stopped == false)
         {
             StartCoroutine("WaitToLoadScene");
             rb.drag = 3;
+            stopped = true;
         }
     }
 
     private IEnumerator WaitToLoadScene()
     {
+        addMoney.GiveMoney();
         yield return new WaitForSeconds(3);
         sceneLoader.LoadScene("Shop");
     }
