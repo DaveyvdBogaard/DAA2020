@@ -9,4 +9,16 @@ public class SO_Upgrade : ScriptableObject
     public string upgradeName;
     public Sprite upgradeSprite;
     public int upgradePrice;
+    public float priceMultiplier;
+    public float valueMultiplier;
+
+    public void addValue(IntReference PlayerMoney)
+    {
+        if (PlayerMoney.value >= upgradePrice)
+        {
+            PlayerMoney.value = PlayerMoney.value - upgradePrice;
+            value = value * valueMultiplier;
+            upgradePrice = Mathf.CeilToInt(upgradePrice * priceMultiplier);
+        }
+    }
 }
