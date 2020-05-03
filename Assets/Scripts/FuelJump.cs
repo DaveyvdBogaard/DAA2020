@@ -9,6 +9,7 @@ public class FuelJump : MonoBehaviour
     public float startingFuel;
     public float fuel;
     public float fuelcost;
+    public AudioSource audio;
 
     public FloatReference jumpForce;
     Rigidbody2D rb;
@@ -35,6 +36,9 @@ public class FuelJump : MonoBehaviour
                 fuelPercentage.value = fuel / startingFuel;
                 UIUpdate.Raise();
                 StartCoroutine("BoostCooldown");
+                float randomPitch = Random.Range(0.9f, 1.1f);
+                audio.pitch = randomPitch;
+                audio.Play();
             }
         }
     }
