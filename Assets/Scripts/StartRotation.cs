@@ -8,6 +8,7 @@ public class StartRotation : MonoBehaviour
     private Transform fishTransform;
     public FloatReference maxFishRotation;
     public FloatReference minFishRotation;
+    public IntReference startPower;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +46,7 @@ public class StartRotation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
-            rb.AddForce(fishTransform.up * 100, ForceMode2D.Impulse);
+            rb.AddForce(fishTransform.up * startPower.value, ForceMode2D.Impulse);
             GetComponent<PlayerMovement>().enabled = true;
             GetComponent<StartRotation>().enabled = false;
         }
