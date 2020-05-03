@@ -19,7 +19,6 @@ public class UpgradeShop : MonoBehaviour
     {
         upgradeButton.GetComponent<Image>().overrideSprite = upgrade.upgradeSprite;
         upgradeNameBox.text = upgrade.upgradeName;
-        UpdateText();
     }
 
     private void Update()

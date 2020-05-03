@@ -8,7 +8,7 @@ public class MoneyDisplay : MonoBehaviour
     public Text playerMoneyDisplay;
     public IntReference playerMoney;
 
-    private void Start()
+    private void Update()
     {
         ChangeAmount(); 
     }
