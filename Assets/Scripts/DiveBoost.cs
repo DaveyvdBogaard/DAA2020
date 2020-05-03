@@ -7,6 +7,8 @@ public class DiveBoost : MonoBehaviour
     Rigidbody2D rb;
     Transform fishTransform;
     public IntReference diveBoostForce;
+
+    private float pastHeight;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +19,19 @@ public class DiveBoost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        StartCoroutine("PastHeight");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Equator")
+        if (collision.tag == "Equator" && pastHeight > 5)
         {
             rb.AddForce(fishTransform.up * diveBoostForce.value, ForceMode2D.Impulse);
         }
+    }
+    IEnumerator PastHeight()
+    {
+        yield return new WaitForSeconds(1f);
+        pastHeight = transform.position.y;
     }
 }

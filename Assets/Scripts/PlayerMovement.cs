@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     private void ChangeDrag()
     {
         velocity = rb.velocity;
-        if (velocity.x < 5 && transform.position.y < 5f && stopped == false)
+        if (velocity.x < 5 && transform.position.y < 5f && transform.position.y > -5 && stopped == false)
         {
             StartCoroutine("WaitToLoadScene");
             rb.drag = 3;
