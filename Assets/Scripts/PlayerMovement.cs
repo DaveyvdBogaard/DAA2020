@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public SceneLoader sceneLoader;
     public FuelJump playerJump;
     Rigidbody2D rb;
     public Transform fishTransform;
     public int rotationForce;
+    public DiveBoost diveBoost;
    
     Vector2 rotation;
     private Vector3 velocity;
@@ -45,11 +47,17 @@ public class PlayerMovement : MonoBehaviour
     private void ChangeDrag()
     {
         velocity = rb.velocity;
-        //Debug.Log("velocity = " + velocity);
 
-        if (velocity.x < 5)
+        if (velocity.x < 5 && transform.position.y < 5f)
         {
+            StartCoroutine("WaitToLoadScene");
             rb.drag = 3;
         }
+    }
+
+    private IEnumerator WaitToLoadScene()
+    {
+        yield return new WaitForSeconds(3);
+        sceneLoader.LoadScene("Shop");
     }
 }

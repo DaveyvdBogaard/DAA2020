@@ -16,23 +16,11 @@ public class GravityController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        FlipGravity();
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Equator")
-        {
-            FlipGravity();
-        }
-    }
-
-
     private void FlipGravity()
     {
-        isAirborne = !isAirborne;
-
-        if (isAirborne == true)
+        if (transform.position.y > 0.26)
         {
             rb.gravityScale = 1;
         }
