@@ -11,8 +11,8 @@ public class ChargeBar : MonoBehaviour
 
     [Header("Extra boost value")]
     // This is the power the fish should get when being shot
-    public IntReference startPower;
-    public IntReference statStartPower;
+    public FloatReference startPower;
+    public FloatReference statStartPower;
 
     void Start()
     {
@@ -33,7 +33,7 @@ public class ChargeBar : MonoBehaviour
             {
                 transform.localScale += new Vector3(0, 1 * Time.deltaTime * growFactor, 0) ;
                 yield return null;
-                startPower.value++;
+                startPower.value+=1.5f;
             }
             yield return new WaitForSeconds(waitTime);
 
@@ -41,7 +41,7 @@ public class ChargeBar : MonoBehaviour
             {
                 transform.localScale -= new Vector3(0, 1 * Time.deltaTime * growFactor, 0);
                 yield return null;
-                startPower.value--;
+                startPower.value-=1.5f;
             }
             yield return new WaitForSeconds(waitTime);
         }

@@ -1350,6 +1350,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: chargeBarScaler
       objectReference: {fileID: 0}
+    - target: {fileID: 1656775460154838708, guid: 3759957b39bc4d146971af02c351dbad,
+        type: 3}
+      propertyPath: statStartPower
+      value: 
+      objectReference: {fileID: 11400000, guid: fbc5bf26da34b9f478565c1a3645e19c,
+        type: 2}
+    - target: {fileID: 1656775460154838708, guid: 3759957b39bc4d146971af02c351dbad,
+        type: 3}
+      propertyPath: startPower
+      value: 
+      objectReference: {fileID: 11400000, guid: 51eea691a9cd18a4b84609c765a279c2,
+        type: 2}
     - target: {fileID: 1656775460154838709, guid: 3759957b39bc4d146971af02c351dbad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2684,6 +2696,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3936289539749711673, guid: 4c29cb84a7c8fba42bea6f3f7be40103,
+        type: 3}
+      propertyPath: startPower
+      value: 
+      objectReference: {fileID: 11400000, guid: 51eea691a9cd18a4b84609c765a279c2,
+        type: 2}
     - target: {fileID: 7538716433448930273, guid: 4c29cb84a7c8fba42bea6f3f7be40103,
         type: 3}
       propertyPath: jumpForce
