@@ -22,6 +22,11 @@ public class UpgradeShop : MonoBehaviour
         UpdateText();
     }
 
+    private void Update()
+    {
+        UpdateText(); 
+    }
+
     public void UpdateText()
     {
         if (playerMoney.value >= upgrade.upgradePrice)
@@ -41,7 +46,6 @@ public class UpgradeShop : MonoBehaviour
     public void CallUpgrade(IntReference playerMoney)
     {
         upgrade.addValue(playerMoney);
-        UpdateText();
         moneyChange.Raise();
     }
 }
