@@ -6,11 +6,11 @@ public class AddMoney : MonoBehaviour
 {
     public IntReference CurrentMoney;
     public FloatReference PlayerDistance;
-    public IntReference RewardMultiplier;
+    public FloatReference RewardMultiplier;
 
     public void GiveMoney()
     {
-        int DistanceInt = Mathf.FloorToInt(PlayerDistance.value);
+        int DistanceInt = Mathf.FloorToInt(PlayerDistance.value * RewardMultiplier.value);
         Debug.Log("give player money");
         CurrentMoney.value += DistanceInt;
     }
