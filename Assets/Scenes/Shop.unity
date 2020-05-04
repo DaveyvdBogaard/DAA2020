@@ -887,7 +887,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $300000
+  m_Text: 0
 --- !u!222 &797941623
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1675537192}
   - component: {fileID: 1675537194}
-  - component: {fileID: 1675537193}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -1288,33 +1287,6 @@ RectTransform:
   m_AnchoredPosition: {x: -480, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1675537193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675537191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fe985f66c9c4640b3514dc7f98df39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 09e8dfbd53ca12946aa725a7b941aa26, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1675537194}
-        m_MethodName: ChangeAmount
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1675537194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,8 +1299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20663bb7e01e53644b949ef51372f19d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScoreDisplay: {fileID: 0}
-  playerDistance: {fileID: 0}
+  playerScoreDisplay: {fileID: 797941622}
+  playerDistance: {fileID: 11400000, guid: c9a9b6b03f24e724a87ac8c4b2bffd53, type: 2}
+  highscore: {fileID: 11400000, guid: 16b7152777e75104b92abb1042f3a1a8, type: 2}
 --- !u!1 &1696696720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,8 +1336,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -75}
-  m_SizeDelta: {x: 68, y: 100}
+  m_AnchoredPosition: {x: 102.67, y: -75}
+  m_SizeDelta: {x: 62.65, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1696696722
 MonoBehaviour:

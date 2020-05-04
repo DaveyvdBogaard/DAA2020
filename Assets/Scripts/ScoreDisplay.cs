@@ -8,7 +8,7 @@ public class ScoreDisplay : MonoBehaviour
     public Text playerScoreDisplay;
     public FloatReference playerDistance;
 
-    private float highscore;
+    public FloatReference highscore;
 
     private void Update()
     {
@@ -17,10 +17,10 @@ public class ScoreDisplay : MonoBehaviour
 
     public void ChangeAmount()
     {
-        if (playerDistance.value > highscore)
+        if (playerDistance.value > highscore.value)
         {
-            highscore = playerDistance.value;
+            highscore.value = playerDistance.value;
         }
-        playerScoreDisplay.text = highscore.ToString("F1");
+        playerScoreDisplay.text = highscore.value.ToString("F1");
     }
 }
